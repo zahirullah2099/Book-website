@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+*{
+    box-sizing: border-box; 
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-family: var(--Snigle-font);
+    text-decoration: underline;
+}
+p{
+    
+    font-family: var(--Snigle-font) !important;
+}
+ 
+header,section{
+    overflow: hidden;
+}
+:root{
+    --Snigle-font:"Sniglet",cursive;
+    --Rubik:"Rubik",cursive;
+    --Patua:"Patua One",cursive;
+    --Lobster:"Lobster",cursive;
+    --light-black:"Rubik",#2e2c2caf;
+    --bggradient:linear-gradient(to bottom,#dd2476,#ff512f);
+    --light-gray: rgba(255,255,255,.5);
+}
+header a {
+    font-family: var(--Snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+header{
+    background: #dd2476;
+    background: var(--bggradient);
+}
+.nav-link{
+    color: white !important;
+}
+header .nav-item:last-child{
+    padding-right: 10.5em;
+}
+header .nav-item {
+    padding: 0.9em; 
+}
+header .navbar-brand{
+    padding-left: 8rem;
+}
+header .nav-link:hover{
+    color: black;
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 4px;  
+  }
+  
+  .dropdown-content a {
+    color: #000;  
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd; 
+
+  }
+  
+  /* Show the dropdown when hovering over the parent */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+/* dropdown end */
+
+
+
+ 
+
+header .container .row .col-md-7{
+    margin-top: 80px;
+    font-family: var(--Snigle-font);
+    color: white;
+}
+header .container .row .col-md-5 img{
+    width: 90%;
+    height: 90%;
+}
+header .container .row .col-md-7 h1{
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+header .container .row .col-md-7 h6{
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+header .container .row .col-md-7 button{
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+
+/* section 1 start */
+
+  .section-1{
+    margin: 75px 0px; 
+}
+.section-1 #second{   
+    box-shadow: 3px 7px 8px rgb(128, 125, 125);
+    background-color: rgb(249, 249, 249);
+    margin-left: -70px;
+    height: 330px;
+    margin-top: 17px;
+} 
+.section-1 .col-md-6 .panel p{ 
+    font-size: 14px;
+    word-spacing: 1px;
+    color: rgba(0, 0, 0, 0.6); 
+}
+.section-1 .col-md-6 .panel h1{ 
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: var(--Rubik);
+}
+.section-1 .col-md-6 .pray{  
+}  
+
+ 
+
+  
+/* section 1 end */
+ 
+/* section 2 start */
+.cover{
+    width: 100vw;
+    height: 55vh;
+    background: url("./images/pexels-elina-fairytale-5859807.jpg");
+    background-position:  center ;  
+    background-size: cover;
+    /* position: relative; */
+}
+.cover .content{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    padding-top: 19vmin;
+    color: whitesmoke;
+}
+.cover .content>h1{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+}
+.cover .content>p{
+    font-family: var(--Rubik);
+    font-size: 15px;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+}
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 127px;
+    background-color: white;
+    padding-top: 3vmin; 
+    margin: 1rem;
+    border-radius: .5em;
+    box-shadow: 1px 2px 50px 0px rgb(247, 175, 175);
+}
+.numbers {
+    margin-top: -10vmin;
+}
+.numbers .rect h1{
+    font-size: 3rem;
+    color: tomato;
+}
+.numbers .rect p{
+    font-family: var(--Patua);
+    letter-spacing: 1px;
+}
+
+.purchase>h1{
+    padding-top: 15vmin;
+    padding-bottom: .1em;
+    font-family: var(--Lobster);
+}
+.purchase>p{
+     color: var(--light-black);
+     font-size: 15px;
+     padding-bottom: 10vmin;
+     word-spacing: 2px;
+}
+
+/* cards */
+.cards div{
+    padding: 0;
+    margin: 10px;
+
+}
+.cards .title{
+    background: rgba(208, 241, 241, 0.199);
+    padding: 32px 24px; 
+}
+.cards p {
+    font-size: 12px;
+}
+.card-body .pricing{
+   background:rgba(208, 241, 241, 0.199);
+   border-top-right-radius: 170px;
+   border-top-left-radius: 170px;
+}
+.card-body .pricing>h1{
+    font-size: 8vmin;
+    padding-top: 20px;
+}
+/* section 3 */
+
+.section-3{
+    height: auto;
+    margin-top: 15vmin;
+    background : var(--bggradient);
+}
+.section-3 .col-md-12>h1{
+    /* padding: 2em 0 0.5em 0; */
+    padding: 50px;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+.section-3 .col-md-12>p{
+    padding: 0px 6em; 
+    padding-bottom: 30px;
+    color: rgb(232, 230, 230);
+    font-size: 15px;
+}
+.section-3 .desktop{
+    background: white;
+    display: inline-block;
+    display: inline-block;
+    border-radius: 68px;
+    padding: 9px 30px;
+    margin: 10px;
+}
+.section-3 .desktop h3{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--Rubik);
+}
+.section-3 .desktop p{
+    font-size: 15px;
+}
+.section-3 .row i{
+    font-size: 30px;
+    padding: 0px 15px;
+    background-color: #000000bf;
+    color: white;
+    border-radius: 50%;
+}
+/* section 4 */
+
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin; 
+}
+.section-4 .team{ 
+    padding: 35px 80px;
+}
+.section-4 .card {
+     width: 313px;
+     margin: 30px 20px 0px 20px;
+     gap: 40px;
+}
+.section-4 .card .card-text{
+font-size: 13px;
+}
+/* .section-4 .carousel-item img{
+    width: 400px;
+    border-radius: 50%;
+} */
+ 
+.section-4 .card .card-body a{
+font-size: 20px;
+}
+ 
+.border-radius{
+    border-radius: 340px;
+    width: 60%;
+    padding: 4px;
+}
+
+/* footer */
+footer{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 35px 20px; 
+}
+footer p {
+    color: rgb(200, 198, 198);
+    font-size: 14px;
+}
+ 
+footer p>span{
+    color: tomato;
+}
+footer input{
+    border: none !important;
+}
+footer input::placeholder{
+    color: white !important;
+}
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+footer .col-md-2{ 
+   text-align: center;
+}
+footer .column i{ 
+   color: tomato;
+   margin: 4px;
+   font-size: 20px;
+}
+
+@media (width< 1201px){
+    header .container .row .col-md-7 button{
+        margin-bottom: 20px;
+    }
+    .section-1 #second{  
+         margin-left: 0px;  
+        height: 280px; 
+        margin-left: -40px;
+        padding: 0 20px 0px 20px; 
+    } 
+}
+/* .section-1 #second{   
+    box-shadow: 3px 7px 8px rgb(128, 125, 125);
+    background-color: rgb(249, 249, 249);
+    margin-left: -70px;
+    height: 330px;
+    margin-top: 17px;
+} */
+@media(width< 994px){
+    .section-1{
+        margin: 75px 0px; 
+    }
+    .section-1 .container .row .col-md-6 img{
+        height: 320px;
+    }
+    .section-1 #second{  
+        margin-left: 0px;  
+       height: 280px; 
+       width: 55%;
+       margin-left: -40px;
+       padding: 0 20px 0px 20px; 
+   }
+}
+@media (width < 770px){
+    .section-1 #second{  
+        margin-left: 0px; 
+        width: 80%;
+        margin: auto;
+        margin-top: -40px;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 2 end */
